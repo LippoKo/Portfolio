@@ -1,0 +1,11 @@
+<!-- Hi, I'm <span class="text-bold">Luiz</span>, and in my <span class="text-bold">five years</span> as a <span class="text-bold">designer and developer</span>, I have turned hundreds of my client's <span class="text-bold">ideas into reality</span>. Developing and creating beautiful interactive user interfaces is my <span class="text-bold">passion</span>. -->
+
+<!-- If <span class="text-bold">you</span> would like to work <span class="text-bold">together</span> on a <span class="text-bold">project</span>, please fill out the <span class="text-bold">form</span> below. I can't wait to turn your <span class="text-bold">ideas</span> into <span class="text-bold">reality</span>! -->
+
+/* ?RADIAL GRADIENT ?background: radial-gradient(50% 50% at 50% 50%, rgba(255,
+101, 118, .08) 0%, rgba(255, 101, 118, 0) 100%); */ *, *::before, *::after {
+margin: 0; padding: 0; box-sizing: border-box; } :root { --light-color: #f3f3fe;
+--dark-color: #363636; --border-top-color: rgba(0, 0, 0, 0.1);
+--link-hover-color: rgba(255, 255, 255, 0.2); --title-font-family: "Playfair
+Display", "serif"; --body-font-family: "Poppins", "sans-serif";
+--container-padding: 1.5rem; --section-vertical-spacing: 8rem; }
