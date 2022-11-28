@@ -25,6 +25,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -658,6 +659,10 @@ textarea {
 /* !RESUME */
 .resume-button {
   padding: 0.3rem;
+}
+
+.cv-image {
+  width: 25rem;
 }
 
 /* !FOOTER STYLES */
