@@ -655,6 +655,11 @@ textarea {
   transform: rotate(25deg);
 }
 
+/* !RESUME */
+.resume-button {
+  padding: 0.3rem;
+}
+
 /* !FOOTER STYLES */
 .footer-container {
   display: flex;
