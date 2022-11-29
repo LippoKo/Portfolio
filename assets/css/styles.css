@@ -521,7 +521,7 @@ textarea {
 
 .card-image {
   height: 40rem;
-  background-color: #c4d8d1;
+  background-color: var(--light-color);
   margin-bottom: 2.5rem;
   border-radius: 0.4rem;
   display: flex;
@@ -538,7 +538,7 @@ textarea {
 }
 
 .project-cards .card-image:is(:hover, :focus) {
-  background-color: #370cf7d0;
+  background-color: rgba(72, 68, 80, 0.281);
 }
 
 .card-heading {
