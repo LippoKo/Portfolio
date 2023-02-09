@@ -1,5 +1,5 @@
 /* !FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@0;1&family=Playfair+Display:wght@400;600&family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap');
 
 /* !BASE STYLES/RESET */
 *,
@@ -15,6 +15,7 @@
   --dark-color: #363636;
   --border-top-color: rgba(0, 0, 0, 0.1);
   --link-hover-color: rgba(255, 255, 255, 0.2);
+  --title-first-line: 'Playfair Display SC', 'serif';
   --title-font-family: 'Playfair Display', 'serif';
   --body-font-family: 'Poppins', 'sans-serif';
   --container-width: 54rem;
@@ -98,8 +99,8 @@ textarea {
   height: 80vw;
   background: radial-gradient(
     50% 50% at 50% 50%,
-    rgba(78, 14, 230, 0.15) 0%,
-    rgba(255, 101, 118, 0) 100%
+    rgba(179, 143, 190, 0.11) 0%,
+    rgba(226, 14, 39, 0) 70%
   );
   z-index: -1;
 }
@@ -122,6 +123,31 @@ textarea {
 }
 
 /* !HEADER */
+
+.element {
+  position: relative;
+  overflow: hidden;
+}
+
+.element::before {
+  content: 'Everything is better in Dark Mode! Try change the theme and Enjoy the Darkness!';
+  position: absolute;
+  left: 0;
+  white-space: nowrap;
+  animation: animation-cross 15s linear infinite;
+  font-family: var(--title-first-line);
+  text-shadow: 0 0 1px #1c1b86, 0 0 3px #f7f3f3, 0 0 3px #f0ecec;
+}
+
+@keyframes animation-cross {
+  from {
+    transform: translateX(70%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .header {
   margin-bottom: 5rem;
 }
@@ -255,16 +281,60 @@ textarea {
 }
 
 /* !HERO STYLES*/
-.title {
-  font-family: var(--title-font-family);
-  font-weight: 300;
+
+.title-logo {
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 0 0 1px #1c1b86, 0 0 3px #f7f3f3, 0 0 3px #f0ecec;
+}
+
+.main-title-logo {
+  font-size: clamp(2rem, 6vw, 5rem);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.title-1 {
+  font-family: var(--body-font-family);
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.title-2 {
+  font-family: var(--title-first-line);
+  font-style: italic;
+  font-weight: normal;
+  text-transform: uppercase;
+  transform: rotate(-10deg);
+  text-shadow: 0 0 1px #1c1b86, 0 0 13px #f7f3f3, 0 0 13px #f0ecec;
+}
+
+.title-3 {
+  font-family: var(--body-font-family);
+  font-weight: 200;
+  font-style: italic;
   text-transform: uppercase;
 }
 
 .main-title {
-  font-size: clamp(5rem, 10vw, 10rem);
+  font-size: clamp(4rem, 10vw, 10rem);
   text-align: center;
   line-height: 1.2;
+}
+
+.main-title-2 {
+  font-size: clamp(6rem, 15vw, 20rem);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.text-light {
+  font-weight: 100;
+}
+
+.stacks {
+  text-shadow: 0 0 1px #1c1b86, 0 0 3px #f7f3f3, 0 0 3px #f0ecec;
 }
 
 .inline-image {
@@ -327,6 +397,7 @@ textarea {
 
 .text-bold {
   font-weight: bold;
+  text-shadow: 0 0 1px #1c1b86, 0 0 5px #f7f3f3, 0 0 5px #f0ecec;
 }
 
 .funnyMessage::before {
@@ -719,6 +790,23 @@ textarea {
 
 /* !MEDIA QUERIES */
 @media screen and (min-width: 768px) {
+  .element::before {
+    content: 'Everything is better in Dark Mode! Try change the theme and Enjoy the Darkness!';
+    position: absolute;
+    left: 60%;
+    white-space: nowrap;
+    animation: animation-cross 25s linear infinite;
+  }
+
+  @keyframes animation-cross {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+
   .container {
     min-width: 96rem;
   }
